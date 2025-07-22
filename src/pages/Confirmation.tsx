@@ -265,7 +265,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://buy.stripe.com/14A14peAQ9pCe6P8Wr1sQ0t" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/E100964884A?off=1ehmwaaf&checkoutMode=10&bid=1753222054515" target="_blank" rel="noopener noreferrer">
                       Incluir minha oração
                     </a>
                   </Button>
@@ -294,7 +294,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://buy.stripe.com/9B6eVfboE31e9QzegL1sQ0u" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/E100964884A?off=wbfww8vg&checkoutMode=10&bid=1753222080935" target="_blank" rel="noopener noreferrer">
                       Entrega Completa da Oração
                     </a>
                   </Button>
@@ -320,7 +320,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#f4d58d] hover:bg-[#e3c47c] text-[#333333] px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://buy.stripe.com/7sYaEZ3WceJWbYHfkP1sQ0v" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/E100964884A?off=mxkg777x&checkoutMode=10&bid=1753222094968" target="_blank" rel="noopener noreferrer">
                       Enviar e Ajudar
                     </a>
                   </Button>
