@@ -117,7 +117,7 @@ const Index = () => {
               Envie Seu Pedido de Oração à Sagrada Gruta de Lourdes, na França
             </p>
             <p className="text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
-              Todos os anos, mais de 6 milhões de peregrinos viajam até a Gruta de Lourdes em busca de cura, 
+              A cada ano, mais de 6 milhões de peregrinos viajam até a Gruta de Lourdes em busca de cura, 
               paz e intervenção divina. Agora, sua oração pode ser entregue neste local milagroso de onde você estiver. 
               Permita-nos levar sua mensagem até esse santuário sagrado, onde incontáveis milagres já aconteceram.
             </p>
