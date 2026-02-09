@@ -265,7 +265,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://pay.hotmart.com/E100964884A?off=1ehmwaaf&checkoutMode=10&bid=1753222054515" target="_blank" rel="noopener noreferrer">
+                    <a href="https://donate.stripe.com/bJe6oJct16JadcH2vL7kc02" target="_blank" rel="noopener noreferrer">
                       Incluir minha oração
                     </a>
                   </Button>
@@ -294,7 +294,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://pay.hotmart.com/E100964884A?off=wbfww8vg&checkoutMode=10&bid=1753222080935" target="_blank" rel="noopener noreferrer">
+                    <a href="https://buy.stripe.com/bJe3cxgJhgjKgoT9Yd7kc03" target="_blank" rel="noopener noreferrer">
                       Entrega Completa da Oração
                     </a>
                   </Button>
@@ -320,7 +320,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#f4d58d] hover:bg-[#e3c47c] text-[#333333] px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://pay.hotmart.com/E100964884A?off=mxkg777x&checkoutMode=10&bid=1753222094968" target="_blank" rel="noopener noreferrer">
+                    <a href="https://buy.stripe.com/5kQ4gB9gP5F60pVb2h7kc04" target="_blank" rel="noopener noreferrer">
                       Enviar e Ajudar
                     </a>
                   </Button>
@@ -374,11 +374,11 @@ const Confirmation = () => {
             <h3 className="font-playfair text-xl font-bold text-white">
               Voluntários de Aparecida
             </h3>
-            <p className="text-sm text-marian-blue">Levando sua fé até os pés da Padroeira do Brasil</p>
+            <p className="text-sm text-marian-blue">Levando sua fé até os pés de Maria</p>
           </div>
         </div>
         <p className="text-gray-400 leading-relaxed">
-          Somos um grupo independente de devotos católicos comprometidos em levar intenções de oração ao Santuário Nacional de Nossa Senhora Aparecida.
+          Somos um grupo independente de devotos católicos comprometidos em levar intenções de oração ao Santuário Nacional de Nossa Senhora de Lourdes.
         </p>
       </div>
 
@@ -433,7 +433,7 @@ const Confirmation = () => {
       </div>
 
       <div className="text-center text-gray-400">
-        <p>&copy; 2025 Voluntários de Aparecida. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Voluntários de Lourdes. Todos os direitos reservados.</p>
         <p className="mt-2 text-sm">
           Desenvolvido com fé para levar esperança a quem mais precisa.
         </p>
