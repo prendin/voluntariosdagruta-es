@@ -265,7 +265,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://donate.stripe.com/bJe6oJct16JadcH2vL7kc02" target="_blank" rel="noopener noreferrer">
+                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718672" target="_blank" rel="noopener noreferrer">
                       Incluir minha oração
                     </a>
                   </Button>
@@ -294,7 +294,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://buy.stripe.com/bJe3cxgJhgjKgoT9Yd7kc03" target="_blank" rel="noopener noreferrer">
+                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718780" target="_blank" rel="noopener noreferrer">
                       Entrega Completa da Oração
                     </a>
                   </Button>
@@ -320,7 +320,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#f4d58d] hover:bg-[#e3c47c] text-[#333333] px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://buy.stripe.com/5kQ4gB9gP5F60pVb2h7kc04" target="_blank" rel="noopener noreferrer">
+                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718847" target="_blank" rel="noopener noreferrer">
                       Enviar e Ajudar
                     </a>
                   </Button>
