@@ -13,6 +13,8 @@ import PlanoMensal from "./pages/PlanoMensal";
 const queryClient = new QueryClient();
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Obrigado from "./pages/Obrigado";
+
 
 
 
@@ -32,6 +34,7 @@ const App = () => (
           <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
           {/* Catch-all route for 404 Not Found */}
           <Route path="*" element={<NotFound />} />
+          <Route path="/obrigado" element={<Obrigado />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
