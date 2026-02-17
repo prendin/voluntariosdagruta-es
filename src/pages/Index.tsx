@@ -111,15 +111,15 @@ const Index = () => {
         <section className="py-16 md:py-24 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg text-center max-w-4xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-6 text-[#333333]">
-              🕊 Milagres Acontecem Todos os Dias na Gruta de Lourdes
+              🕊 Bençãos Acontecem Todos os Dias na Gruta de Lourdes
             </h2>
             <p className="text-xl md:text-2xl font-playfair mb-6 text-[#5f9ea0]">
-              Envie Seu Pedido de Oração à Sagrada Gruta de Lourdes, na França
+              Envie Seu Pedido de Oração ao Santuário Internacional de Nossa Senhora de Lourdes, na França
             </p>
             <p className="text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
-              Todos os anos, mais de 6 milhões de peregrinos viajam até a Gruta de Lourdes em busca de cura, 
-              paz e intervenção divina. Agora, sua oração pode ser entregue neste local milagroso de onde você estiver. 
-              Permita-nos levar sua mensagem até esse santuário sagrado, onde incontáveis milagres já aconteceram.
+              Todos os anos, mais de 6 milhões de peregrinos viajam até a Gruta de Lourdes, na França, em busca de fé, consolo e renovação espiritual.
+              Agora, sua intenção de oração também pode ser levada até esse local de profunda devoção, mesmo à distância.
+              Permita-nos conduzir sua mensagem até a gruta sagrada onde, ao longo dos anos, milhões de fiéis reuniram suas preces e testemunharam graças e momentos de esperança.
             </p>
             <Button 
               asChild
@@ -140,9 +140,9 @@ const Index = () => {
                 Sua Oração, Entregue na Gruta de Lourdes
               </h3>
               <p className="text-lg mb-6 leading-relaxed">
-                Uma vez por mês, realizamos nossa viagem à Gruta de Lourdes com os pedidos de oração. 
-                Se você preencher o formulário abaixo, levaremos sua oração pessoalmente na próxima visita. 
-                Você receberá fotos por e-mail como prova de que sua oração foi entregue neste local sagrado.
+                Periodicamente, realizamos visitas à Gruta de Lourdes levando as intenções de oração recebidas por meio da plataforma. 
+                Ao preencher o formulário abaixo, sua intenção será incluída na próxima entrega organizada pelos voluntários. 
+                Após a realização da visita, enviamos por e-mail registros da entrega das orações, compartilhando com os participantes esse momento de devoção vivido no local sagrado.
               </p>
               
               <div className="my-8 rounded-xl overflow-hidden shadow-lg">
@@ -171,7 +171,7 @@ const Index = () => {
         <section id="formulario" className="py-16 px-2 sm:px-4 bg-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg sm:max-w-2xl">
             <h3 className="text-3xl font-playfair font-semibold mb-10 text-center text-[#333333]">
-              Envie sua oração a Gruta de lourdes
+              Envie sua oração a Gruta de Lourdes
             </h3>
             <Card className="w-full border-[#5f9ea0]/30 shadow-lg">
               <CardContent className="p-8">
@@ -251,7 +251,7 @@ const Index = () => {
                   <BookText className="text-[#5f9ea0]" size={32} />
                 </div>
                 <h4 className="font-playfair text-xl font-semibold mb-4 text-[#333333]">Passo 1</h4>
-                <p className="text-center">Imprimimos sua oração com carinho. Sua oração será cuidadosamente impressa em uma nota especial.</p>
+                <p className="text-center">Sua intenção de oração é registrada em nosso sistema e cuidadosamente preparada para ser levada durante a próxima visita à Gruta de Lourdes.</p>
               </div>
               
               <div className="bg-white p-6 md:p-8 rounded-xl shadow-md flex flex-col items-center">
@@ -259,7 +259,7 @@ const Index = () => {
                   <MapPin className="text-[#5f9ea0]" size={32} />
                 </div>
                 <h4 className="font-playfair text-xl font-semibold mb-4 text-[#333333]">Passo 2</h4>
-                <p className="text-center">Entregamos sua oração na Gruta de Lourdes. Na Gruta, a oração será colocada na Caixa de Pedidos, onde será feita uma bênção especial. Este momento sagrado será fotografado.</p>
+                <p className="text-center">Durante a visita, as intenções são levadas até a Gruta e depositadas no local destinado aos pedidos de oração, em um momento de recolhimento e devoção. Esse momento é registrado em imagens.</p>
               </div>
               
               <div className="bg-white p-6 md:p-8 rounded-xl shadow-md flex flex-col items-center">
@@ -267,23 +267,23 @@ const Index = () => {
                   <Mail className="text-[#5f9ea0]" size={32} />
                 </div>
                 <h4 className="font-playfair text-xl font-semibold mb-4 text-[#333333]">Passo 3</h4>
-                <p className="text-center">Você recebe a confirmação. Você receberá as fotos da entrega diretamente no seu e-mail assim que chegarmos ao local na visita mensal.</p>
+                <p className="text-center">Após a realização da visita, enviamos por e-mail os registros da entrega das orações, permitindo que você acompanhe esse momento especial vivido no santuário.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Os Milagres Esperam por Você */}
+        {/* As Bençãos Esperam por Você */}
         <section className="py-16 px-2 sm:px-4 bg-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
-            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">Os Milagres Esperam por Você</h3>
+            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">As Bençãos Esperam por Você</h3>
             <p className="text-lg mb-6 leading-relaxed">
-              Ao enviar sua oração à Gruta de Lourdes, você se une a milhares de pessoas que já buscaram a graça divina nesse santuário. 
-              Tenha conforto ao saber que sua prece foi colocada em um lugar tocado pela Virgem Maria, onde milagres são parte da rotina.
+              Ao enviar sua intenção de oração à Gruta de Lourdes, você se une a milhões de fiéis que, ao longo dos anos, peregrinaram até esse local em busca de fé, consolo e esperança. 
+              Muitos encontram ali um espaço de silêncio, oração e renovação espiritual, profundamente marcado pela devoção à Virgem Maria.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              Seja você alguém em busca de cura, paz, amor ou clareza, entregar sua oração em Lourdes é um gesto espiritual profundo. 
-              Esse momento sagrado ficará com você para sempre, como prova de que fez algo extraordinário para honrar a Deus.
+              Seja em momentos de busca por paz, cura interior, direção ou serenidade, confiar sua oração a Lourdes representa um gesto de fé e entrega. 
+              Para muitos devotos, essa experiência se torna uma lembrança significativa — um sinal concreto de sua intenção de se aproximar de Deus por meio da oração.
             </p>
             <div className="flex justify-center">
               <Button 
@@ -301,10 +301,11 @@ const Index = () => {
         {/* Viva as Bênçãos de Lourdes */}
         <section className="py-16 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
-            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">Viva as Bênçãos de Lourdes Sem Sair de Casa</h3>
+            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">Viva a devoção de Lourdes sem sair de casa</h3>
             <p className="text-lg mb-8 text-center leading-relaxed">
-              Você não precisa viajar até Lourdes para receber as bênçãos deste lugar sagrado. 
-              Ao permitir que levemos sua oração, você economiza tempo e dinheiro, e ainda assim recebe os benefícios espirituais desse local santo.
+              Nem todos podem viajar até Lourdes, mas a oração permite que a fé ultrapasse distâncias.
+              Ao confiar sua intenção para ser levada à Gruta, você participa espiritualmente desse lugar de profunda devoção, unindo sua prece às de milhões de fiéis que ali rezam todos os anos.
+              Dessa forma, mesmo à distância, você pode viver esse gesto de fé e manter sua oração presente em um dos mais conhecidos locais de peregrinação mariana do mundo.
             </p>
             
             <div className="my-8 rounded-xl overflow-hidden shadow-lg">
@@ -321,10 +322,10 @@ const Index = () => {
         <section className="py-16 px-2 sm:px-4 bg-white">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
             <div className="bg-[#5f9ea0]/5 border border-[#5f9ea0]/10 p-8 rounded-xl shadow-sm">
-              <h3 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-center text-[#333333]">Compartilhe as Bênçãos com Quem Você Ama</h3>
+              <h3 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-center text-[#333333]">Compartilhe este gesto de fé com quem você ama</h3>
               <p className="text-lg mb-6 text-center leading-relaxed">
-                Se você não precisa de um milagre agora, envie uma oração por alguém que precisa. 
-                Ofereça esse gesto de amor a um ente querido e permita que a graça divina alcance a vida dele também.
+                Envie uma intenção por alguém querido e transforme esse gesto em um sinal de cuidado, esperança e fé. 
+                Confiar uma oração em favor de outra pessoa é uma forma profunda de amor e intercessão, unindo pensamentos e preces em um momento de espiritualidade e devoção.
               </p>
               <div className="flex justify-center">
                 <Button 
@@ -361,10 +362,12 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-lg mb-0 leading-relaxed text-center">
-                  Há mais de um século, a Gruta de Lourdes tem sido destino de peregrinação, 
-                  conhecida por suas curas milagrosas e pela forte conexão espiritual. 
-                  Peregrinos relatam transformações profundas após visitarem o local. 
-                  Agora você também pode ter sua oração colocada diretamente nesse espaço sagrado.
+                  Desde as aparições de Nossa Senhora a Santa Bernadette, em 1858,
+                  a Gruta de Lourdes tornou-se um dos mais importantes destinos de peregrinação cristã do mundo. 
+                  Milhões de fiéis visitam o local movidos pela fé,
+                  pela busca de consolo espiritual e pelos inúmeros testemunhos de graças alcançadas ao longo dos anos. 
+                  Hoje, mesmo à distância, sua intenção de oração também pode ser levada até esse espaço de profunda devoção,
+                  unindo sua prece à tradição de oração vivida diariamente na gruta.
                 </p>
               </CardContent>
             </Card>
@@ -375,11 +378,11 @@ const Index = () => {
         <section className="py-16 md:py-24 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg text-center max-w-4xl">
             <h3 className="text-3xl font-playfair font-semibold mb-6 text-[#333333]">
-              Receba o Presente dos Milagres Hoje Mesmo
+              Confie sua oração à Nossa Senhora de Lourdes hoje mesmo
             </h3>
             <p className="text-lg mb-8 max-w-3xl mx-auto">
-              Coloque sua oração na Gruta de Lourdes e confie no poder da intervenção divina. 
-              Sua oração, entregue pessoalmente, fará parte da tradição sagrada desse lugar santo.
+              Envie sua intenção de oração para ser levada à Gruta de Lourdes e una sua prece à tradição de fé vivida diariamente nesse local sagrado.
+              Sua oração fará parte desse gesto devocional, sendo conduzida com respeito e reverência durante a visita à gruta.
             </p>
             <a
               href="#formulario"
@@ -403,13 +406,13 @@ const Index = () => {
           </div>
           <div>
             <h3 className="font-playfair text-xl font-bold text-white">
-              Voluntários de Aparecida
+              Voluntários da Gruta de Lourdes
             </h3>
-            <p className="text-sm text-marian-blue">Levando sua fé até os pés da Padroeira do Brasil</p>
+            <p className="text-sm text-marian-blue">Levando intenções de oração até a Gruta de Lourdes, na França</p>
           </div>
         </div>
         <p className="text-gray-400 leading-relaxed">
-          Somos um grupo independente de devotos católicos comprometidos em levar intenções de oração ao Santuário Nacional de Nossa Senhora Aparecida.
+          Somos um grupo independente de devotos comprometidos em levar intenções de oração à Gruta de Lourdes, local de profunda devoção mariana onde, segundo a tradição católica, Nossa Senhora apareceu a Santa Bernadette em 1858.
         </p>
       </div>
 
@@ -421,8 +424,8 @@ const Index = () => {
         <div className="space-y-3">
           <div className="flex items-center space-x-3">
             <Mail className="h-5 w-5 text-marian-blue" />
-            <a href="mailto:contato@volunteerslourdes.org" className="hover:text-white transition-colors">
-              support@volunteerslourdes.org
+            <a href="mailto:espiritualidadeviva.org@gmail.com" className="hover:text-white transition-colors">
+              espiritualidadeviva.org@gmail.com
             </a>
           </div>
         </div>
@@ -451,21 +454,31 @@ const Index = () => {
           Aviso Legal Importante
         </h4>
         <p className="text-gray-300 leading-relaxed text-sm">
-  Nossa missão é levar as orações dos fiéis até a Gruta de Lourdes, onde Maria apareceu a Santa Bernadette.  
-  Já fazemos isso com amor, fé e dedicação há mais de 14 anos, entregando cada intenção com respeito e reverência.  
-  Todos os dias, recebemos pedidos de oração de pessoas que confiam no poder da intercessão de Nossa Senhora.  
-  É uma honra poder ser ponte entre o coração dos devotos e este local de tantas graças.  
+  Nossa missão é levar as intenções de oração dos fiéis até a Gruta de Lourdes, local onde,
+  segundo a tradição católica, Nossa Senhora apareceu a Santa Bernadette.
+  Realizamos esse trabalho com respeito, fé e dedicação, reunindo pedidos de oração
+  enviados por pessoas que confiam na intercessão de Nossa Senhora e desejam unir suas preces a esse lugar de profunda devoção.  
   <br /><br />
-  O projeto Voluntários de Lourdes é uma iniciativa devocional independente e não possui vínculo oficial com o Santuário de Nossa Senhora de Lourdes,  
-  a Diocese de Tarbes e Lourdes ou qualquer instituição religiosa oficial. Nossa missão é puramente espiritual e voluntária.  
-  Não prometemos milagres, apenas entregamos com fé as intenções enviadas à gruta sagrada onde Maria apareceu.
+  O projeto Voluntários da Gruta de Lourdes é uma iniciativa devocional independente e não possui vínculo oficial com o
+  Santuário de Nossa Senhora de Lourdes, com a Diocese de Tarbes e Lourdes ou com qualquer instituição religiosa oficial.
+  Trata-se de uma ação de caráter devocional, organizada de forma estruturada para viabilizar o envio e a entrega das intenções recebidas.  
+  Não prometemos milagres nem resultados espirituais específicos. Nosso propósito é conduzir, com respeito e reverência,
+  as intenções enviadas pelos participantes até a gruta sagrada, preservando o caráter espiritual e simbólico desse gesto de fé.
 </p>
       </div>
 
       <div className="text-center text-gray-400">
-        <p>&copy; 2025 Voluntários de Aparecida. Todos os direitos reservadoss.</p>
+        <p>&copy; Este projeto é operado por uma agência independente responsável pela gestão digital e operacional da iniciativa,
+          incluindo a manutenção da plataforma, registro das intenções recebidas, atendimento aos participantes,
+          processamento das transações e organização logística dos pedidos de oração enviados.
+          Todas as solicitações são registradas em sistema próprio, garantindo rastreabilidade,
+          controle operacional e acompanhamento da prestação do serviço contratado.
+          Trata-se de uma prestação de serviço de intermediação e organização devocional, realizada de forma estruturada e transparente,
+          com fluxo operacional definido e suporte ao cliente disponível.
+          Esta iniciativa possui caráter devocional independente e não mantém vínculo oficial com o Santuário de Nossa Senhora de Lourdes,
+          com a Diocese de Tarbes e Lourdes ou com qualquer instituição religiosa oficial.</p>
         <p className="mt-2 text-sm">
-          Desenvolvido com fé para levar esperança a quem mais precisa.
+          © 2026 Agência Adspot. Todos os direitos reservados.
         </p>
       </div>
     </div>

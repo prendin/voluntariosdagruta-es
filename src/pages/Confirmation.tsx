@@ -372,13 +372,13 @@ const Confirmation = () => {
           </div>
           <div>
             <h3 className="font-playfair text-xl font-bold text-white">
-              Voluntários de Aparecida
+              Voluntários de Lourdes
             </h3>
             <p className="text-sm text-marian-blue">Levando sua fé até os pés de Maria</p>
           </div>
         </div>
         <p className="text-gray-400 leading-relaxed">
-          Somos um grupo independente de devotos católicos comprometidos em levar intenções de oração ao Santuário Nacional de Nossa Senhora de Lourdes.
+          Somos um grupo independente de devotos católicos comprometidos em levar intenções de oração ao Santuário Internacional de Nossa Senhora de Lourdes.
         </p>
       </div>
 
@@ -390,8 +390,8 @@ const Confirmation = () => {
         <div className="space-y-3">
           <div className="flex items-center space-x-3">
             <Mail className="h-5 w-5 text-marian-blue" />
-            <a href="mailto:contato@volunteerslourdes.org" className="hover:text-white transition-colors">
-              support@volunteerslourdes.org
+            <a href="mailto:espiritualidadeviva.org@gmail.com" className="hover:text-white transition-colors">
+              espiritualidadeviva.org@gmail.com
             </a>
           </div>
           
