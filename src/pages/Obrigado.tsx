@@ -1,6 +1,13 @@
 import { Heart, MessageCircle, BookOpen, Mail } from "lucide-react";
-import heroImage from "@/assets/gruta-hero.jpg";
-import nossaSenhora from "@/assets/nossa-senhora.jpg";
+<img
+  src="/gruta-hero.webp"
+  ...
+/>
+<img
+  src="/nossa-senhora.webp" 
+  ...
+/>
+
 
 const Index = () => {
   return (
@@ -157,7 +164,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 bg-card border-t border-border text-center">
         <p className="text-muted-foreground text-sm">
-          🕊 Voluntários de Lourdes — Levando sua fé até a Gruta Sagrada
+          🕊 Voluntários de Lourdes — Levando sua fé até a Gruta de Lourdes
         </p>
       </footer>
     </div>
