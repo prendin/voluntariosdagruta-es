@@ -1,34 +1,13 @@
-import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Mail, HeartPulse, Gift, HandHeart, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 
 
 
 const Confirmation = () => {
-  const [headline, setHeadline] = useState("");
-  const [paragrafo, setParagrafo] = useState("");
-
-  const location = useLocation();
-  const state = location.state as { nome?: string; genero?: string } | null;
-
-  const nomeCompleto = state?.nome || "irmã";
-  const genero = state?.genero || ""; // ✅ agora declarado corretamente
-
-  const primeiroNome = nomeCompleto.split(" ")[0];
-  const firstName = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
-  const saudacao = `Olá, ${firstName}`;
-  const prontx = genero === "feminino" ? "pronta" : "pronto";
-
-  useEffect(() => {
-    const h = localStorage.getItem("headline");
-    const p = localStorage.getItem("paragrafo");
-    if (h) setHeadline(h);
-    if (p) setParagrafo(p);
-  }, []);
+  const saudacao = "Caro(a) fiel";
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
@@ -60,59 +39,68 @@ const Confirmation = () => {
       </header>
 
       <main>
-        {/* Hero Section */}
-        <section className="py-16 md:py-24 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
-  <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg text-center max-w-4xl">
-    <div className="w-20 h-20 mx-auto mb-6 bg-[#5f9ea0]/10 rounded-full flex items-center justify-center">
-      <HeartPulse className="text-[#5f9ea0]" size={40} />
+  {/* Hero Section */}
+  <section className="py-16 md:py-24 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg text-center">
+      <div className="w-20 h-20 mx-auto mb-6 bg-[#5f9ea0]/10 rounded-full flex items-center justify-center">
+        <HeartPulse className="text-[#5f9ea0]" size={40} />
+      </div>
+
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-4 text-[#333333]">
+        📿 Falta apenas um passo para sua oração chegar à Gruta de Lourdes
+      </h2>
+
+      {/* Frase de alerta logo abaixo */}
+      <div className="bg-[#5f9ea0]/10 border-l-4 border-[#5f9ea0] text-[#22505a] p-4 rounded-md mt-6">
+        <p className="text-lg font-medium">
+          Sua intenção de oração foi recebida e registrada, mas ainda{" "}
+          <strong className="text-[#5f9ea0]">
+            precisa ser confirmada para que possa ser incluída na próxima entrega
+          </strong>
+          . Siga até o final da página para{" "}
+          <strong className="text-[#5f9ea0]">concluir este envio.</strong>
+        </p>
+      </div>
     </div>
+  </section>
 
-    <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-4 text-[#333333]">
-      {headline || "📿 Falta apenas um passo para sua oração chegar à Gruta de Lourdes"}
-    </h2>
+  {/* Carta / Seção de Boas-vindas */}
+  <section className="py-16 px-2 sm:px-4 bg-white">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg">
+      <h3 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-[#5f9ea0]">
+        Caro(a) fiel,
+      </h3>
 
-    {/* Frase de alerta logo abaixo */}
-    <div className="bg-[#5f9ea0]/10 border-l-4 border-[#5f9ea0] text-[#22505a] p-4 rounded-md mt-6">
-      <p className="text-lg font-medium">
-      Sua intenção de oração foi recebida e registrada, mas ainda <strong className="text-[#5f9ea0]">precisa ser confirmada para que possa ser incluída na próxima entrega</strong>.
-      Siga até o final da página para <strong className="text-[#5f9ea0]">concluir este envio.</strong>.
-      </p>
+      <div className="flex flex-col gap-8">
+        <div>
+          <p className="text-lg mb-4 leading-relaxed">
+            Aqui é a Irmã Fátima, e escrevo a você hoje com alegria e esperança no
+            coração. Há anos participo como voluntária em visitas à Gruta de
+            Lourdes, um lugar que acolhe diariamente pessoas vindas de diferentes
+            partes do mundo em busca de oração, consolo e renovação espiritual.
+          </p>
+          <p className="text-lg mb-4 leading-relaxed">
+            Sempre que estou diante da Gruta, sinto profunda emoção ao presenciar
+            relatos de fé e esperança compartilhados por peregrinos que encontram
+            ali paz e fortalecimento interior. Esse local sagrado, onde segundo a
+            tradição católica a Santíssima Virgem Maria apareceu, tornou-se um
+            dos mais conhecidos destinos de peregrinação cristã do mundo. Com
+            humildade e devoção, levamos até esse lugar as intenções de oração
+            confiadas a nós.
+          </p>
+        </div>
+
+        <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/img04.webp"
+            alt="Gruta de Lourdes"
+            className="w-full max-w-none aspect-video object-cover"
+          />
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-        
-        {/* Personal Greeting Section */}
-        <section className="py-16 px-2 sm:px-4 bg-white">
-          <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
-           <h3 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-[#5f9ea0]">
-  {saudacao}
-</h3>
+  </section>
 
-            {paragrafo && (
-              <p className="text-lg mb-6 leading-relaxed">
-                {paragrafo}
-              </p>
-            )}
-
-            <div className="flex flex-col gap-8">
-              <div>
-                <p className="text-lg mb-4 leading-relaxed">
-                  Aqui é a Irmã Fátima, e escrevo a você hoje com alegria e esperança no coração. Há anos participo como voluntária em visitas à Gruta de Lourdes, um lugar que acolhe diariamente pessoas vindas de diferentes partes do mundo em busca de oração, consolo e renovação espiritual.
-                </p>
-                <p className="text-lg mb-4 leading-relaxed">
-                  Sempre que estou diante da Gruta, sinto profunda emoção ao presenciar relatos de fé e esperança compartilhados por peregrinos que encontram ali paz e fortalecimento interior. Esse local sagrado, onde segundo a tradição católica a Santíssima Virgem Maria apareceu, tornou-se um dos mais conhecidos destinos de peregrinação cristã do mundo. Com humildade e devoção, levamos até esse lugar as intenções de oração confiadas a nós.
-                </p>
-              </div>
-              <div className="my-8 rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/img04.webp" 
-                  alt="Gruta de Lourdes" 
-                  className="w-full max-w-none aspect-video object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
         
         {/* Lourdes: A Place of Miracles */}
         <section className="py-16 px-2 sm:px-4 bg-blue-50">
@@ -123,7 +111,8 @@ const Confirmation = () => {
               </h3>
               
               <p className="text-lg mb-4 leading-relaxed">
-                {firstName}, ao longo das visitas à Gruta de Lourdes, testemunhei profundamente a força que a oração exerce na vida das pessoas. Vi peregrinos chegarem carregando dores e preocupações e encontrarem ali consolo, serenidade e renovação interior. Para muitos, é como se o coração encontrasse descanso diante de Deus, em um ambiente marcado pela fé e pela misericórdia divina.
+  Ao longo das visitas à Gruta de Lourdes, testemunhei profundamente a força que a oração exerce na vida das pessoas.
+ Vi peregrinos chegarem carregando dores e preocupações e encontrarem ali consolo, serenidade e renovação interior. Para muitos, é como se o coração encontrasse descanso diante de Deus, em um ambiente marcado pela fé e pela misericórdia divina.
               </p>
               
               <p className="text-lg leading-relaxed">
@@ -216,8 +205,8 @@ const Confirmation = () => {
         <section className="py-16 px-2 sm:px-4 bg-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
             <h3 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-[#5f9ea0]">
-              {firstName}, sua intenção será incluída na entrega das orações.
-            </h3>
+  Sua intenção será incluída na entrega das orações.
+</h3>
             
             <div className="flex flex-col gap-8">
               <div className="my-8 rounded-xl overflow-hidden shadow-lg">
@@ -335,8 +324,8 @@ const Confirmation = () => {
             
             <div className="mt-10 text-center">
   <p className="text-lg font-playfair italic text-[#5f9ea0]">
-    {firstName}, Deus tocou seu coração por um motivo. Escolha agora uma forma de levar sua oração até Lourdes.
-  </p>
+  Caro(a) fiel, Deus tocou seu coração por um motivo. Escolha agora uma forma de levar sua oração até Lourdes.
+</p>
 
   <p className="text-lg font-playfair italic text-[#333333] mt-6">
     "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
