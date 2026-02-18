@@ -24,56 +24,16 @@ const Index = () => {
   const onSubmit = async (data) => {
   setIsSubmitting(true);
 
-  try {
+  // (Opcional) feedback visual pro usuário
+  toast({
+    title: "✉️ Oração recebida",
+    description: "Mantenha essa página aberta."
+  });
 
-    // Envia o lead para a ActiveCampaign
-    await fetch("https://api-email-delta.vercel.app/api/email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        prayer: data.prayer
-      })
-    });
+  // Redireciona direto para a página de confirmação
+  navigate("/confirmacao");
 
-    // Gera headline e parágrafo
-    const gptRes = await fetch("https://api-sellpage.vercel.app/api/generate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        prayer: data.prayer
-      })
-    });
-
-    const gptData = await gptRes.json();
-    localStorage.setItem("headline", gptData.headline);
-    localStorage.setItem("paragrafo", gptData.paragrafo);
-
-    toast({
-      title: "✉️ Oração recebida",
-      description: "Mantenha essa página aberta."
-    });
-
-    // Redireciona para /salvando com nome e gênero
-    navigate("/salvando", {
-      state: {
-        nome: data.name,
-      }
-    });
-
-  } catch (error) {
-    console.error("Erro no envio:", error);
-    toast({
-      title: "Erro",
-      description: "Algo deu errado. Tente novamente.",
-      variant: "destructive"
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
+  setIsSubmitting(false);
 };
 
 
