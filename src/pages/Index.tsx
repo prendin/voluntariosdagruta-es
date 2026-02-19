@@ -24,16 +24,56 @@ const Index = () => {
   const onSubmit = async (data) => {
   setIsSubmitting(true);
 
-  // (Opcional) feedback visual pro usuário
-  toast({
-    title: "✉️ Oração recebida",
-    description: "Mantenha essa página aberta."
-  });
+  try {
 
-  // Redireciona direto para a página de confirmação
-  navigate("/confirmacao");
+    // Envia o lead para a ActiveCampaign
+    await fetch("https://api-email-delta.vercel.app/api/email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        prayer: data.prayer
+      })
+    });
 
-  setIsSubmitting(false);
+    // Gera headline e parágrafo
+    const gptRes = await fetch("https://api-sellpage.vercel.app/api/generate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        prayer: data.prayer
+      })
+    });
+
+    const gptData = await gptRes.json();
+    localStorage.setItem("headline", gptData.headline);
+    localStorage.setItem("paragrafo", gptData.paragrafo);
+
+    toast({
+      title: "✉️ Oração recebida",
+      description: "Mantenha essa página aberta."
+    });
+
+    // Redireciona para /salvando com nome e gênero
+    navigate("/salvando", {
+      state: {
+        nome: data.name,
+      }
+    });
+
+  } catch (error) {
+    console.error("Erro no envio:", error);
+    toast({
+      title: "Erro",
+      description: "Algo deu errado. Tente novamente.",
+      variant: "destructive"
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
 };
 
 
@@ -131,7 +171,7 @@ const Index = () => {
         <section id="formulario" className="py-16 px-2 sm:px-4 bg-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg sm:max-w-2xl">
             <h3 className="text-3xl font-playfair font-semibold mb-10 text-center text-[#333333]">
-              Envie sua oração a Gruta de Lourdes
+              Envie sua oração a Gruta de lourdes
             </h3>
             <Card className="w-full border-[#5f9ea0]/30 shadow-lg">
               <CardContent className="p-8">
@@ -261,7 +301,7 @@ const Index = () => {
         {/* Viva as Bênçãos de Lourdes */}
         <section className="py-16 px-2 sm:px-4 bg-gradient-to-b from-white to-blue-50">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
-            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">Viva a devoção de Lourdes sem sair de casa</h3>
+            <h3 className="text-3xl font-playfair font-semibold mb-8 text-center text-[#333333]">Viva as Bênçãos de Lourdes Sem Sair de Casa</h3>
             <p className="text-lg mb-8 text-center leading-relaxed">
               Nem todos podem viajar até Lourdes, mas a oração permite que a fé ultrapasse distâncias.
               Ao confiar sua intenção para ser levada à Gruta, você participa espiritualmente desse lugar de profunda devoção, unindo sua prece às de milhões de fiéis que ali rezam todos os anos.
@@ -278,7 +318,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Compartilhe as Bênçãos */}
+        {/* Compartilhe este gesto de fé com quem você ama */}
         <section className="py-16 px-2 sm:px-4 bg-white">
           <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-screen-lg max-w-4xl">
             <div className="bg-[#5f9ea0]/5 border border-[#5f9ea0]/10 p-8 rounded-xl shadow-sm">
