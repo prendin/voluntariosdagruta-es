@@ -1,96 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voluntários de Lourdes</title>
-    <meta name="description" content="Envie sua oração à Sagrada Gruta de Lourdes sem sair de casa. Voluntários levam seu pedido com fé e devoção." />
-    <meta name="author" content="Voluntários de Lourdes" />
 
-    <meta property="og:title" content="Voluntários de Lourdes" />
-    <meta property="og:description" content="Envie sua oração à Gruta de Lourdes através de nossos voluntários." />
+    <title>Voluntarios de Lourdes</title>
+    <meta
+      name="description"
+      content="Envía tu intención de oración a la Sagrada Gruta de Lourdes sin salir de casa. Voluntarios llevan tu pedido con fe y devoción."
+    />
+    <meta name="author" content="Voluntarios de Lourdes" />
+
+    <meta property="og:title" content="Voluntarios de Lourdes" />
+    <meta
+      property="og:description"
+      content="Envía tu intención a la Gruta de Lourdes a través de nuestros voluntarios."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://voluntariosdelourdes.online" />
+    <!-- TROCAR: coloque aqui a URL do site em espanhol -->
+    <meta property="og:url" content="https://SEU-DOMINIO-ES-AQUI" />
     <meta property="og:image" content="/opengraph.webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- TROCAR (opcional): se você tiver @ diferente no ES -->
     <meta name="twitter:site" content="@voluntariosdelourdes" />
     <meta name="twitter:image" content="/opengraph.webp" />
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-    <!-- Meta Pixel Code -->
+   <!-- UTMIFY PIXEL ID -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2754275838249229');
-  fbq('track', 'PageView');
-  </script>
-  <!-- End Meta Pixel Code -->  
+  window.pixelId = "69a37447dce34be28bec00e0";
+</script>
 
-    <script>
-      window.pixelId = "693489fa55bc1e1f0a47ab4e";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
-    </script>
-    
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
-
-    <!-- ActiveCampaign Diffuser -->
-    <script>
-      (function(e,t,o,n,p,r,i){
-        e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){
-          (e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)
-        };e[e.visitorGlobalObjectAlias].l=(new Date).getTime();
-        r=t.createElement("script");r.src=o;r.async=true;
-        i=t.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(r,i)
-      })(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
-      vgo('setAccount', '226935133');
-      vgo('setTrackByDefault', true);
-      vgo('process');
-    </script>
-
-    <!-- Hotmart Launcher -->
-    
-		<script id="hotmart_launcher_script">
-			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
-			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
-			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
-			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
-
-			hot('account','55bc34f9-c7e4-3517-a945-cd923b7c719a');
-		</script>
+<!-- UTMify -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
   </head>
 
   <body>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2754275838249229&ev=PageView&noscript=1"/>
-    </noscript>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2754275838249229&ev=PageView&noscript=1"
-      /></noscript>
-
     <div id="root"></div>
 
-    <!-- GPT Engineer -->
+    <!-- GPT Engineer (se você ainda usa isso, pode manter) -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+
+    <!-- App -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
