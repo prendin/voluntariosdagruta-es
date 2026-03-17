@@ -255,7 +255,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718672" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/M104952419M?off=vi359vds&checkoutMode=10" target="_blank" rel="noopener noreferrer">
                       Incluir mi oración
                     </a>
                   </Button>
@@ -284,7 +284,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#5f9ea0] hover:bg-[#4e8a8c] text-white px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718780" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/M104952419M?off=gzivvj4c&checkoutMode=10" target="_blank" rel="noopener noreferrer">
                       Entrega Completa de la Oración
                     </a>
                   </Button>
@@ -302,7 +302,7 @@ const Confirmation = () => {
                     <Gift className="text-[#f4d58d]" size={32} />
                   </div>
                   
-                  <h3 className="font-playfair font-semibold text-xl mb-2 text-center">$33</h3>
+                  <h3 className="font-playfair font-semibold text-xl mb-2 text-center">$39</h3>
                   <h4 className="font-sans text-lg mb-4 text-center">Envío + Apoyo Solidario</h4>
                   
                   <p className="text-sm mb-6 text-center italic">
@@ -310,7 +310,7 @@ const Confirmation = () => {
                   </p>
                   
                   <Button className="w-full bg-[#f4d58d] hover:bg-[#e3c47c] text-[#333333] px-4 py-2 rounded-lg text-lg font-medium shadow-md hover:shadow-lg transition-all" asChild>
-                    <a href="https://voluntariosdagruta.carrinho.app/one-checkout/ocmdf/33718847" target="_blank" rel="noopener noreferrer">
+                    <a href="https://pay.hotmart.com/M104952419M?off=7km4f3n7&checkoutMode=10" target="_blank" rel="noopener noreferrer">
                       Enviar y Apoyar
                     </a>
                   </Button>
