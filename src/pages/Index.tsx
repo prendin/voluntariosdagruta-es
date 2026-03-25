@@ -25,15 +25,15 @@ const Index = () => {
   setIsSubmitting(true);
 
   try {
-    const emailRes = await fetch("https://api-email-delta.vercel.app/api/email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        prayer: data.prayer
-      })
-    });
+    const emailRes = // await fetch("https://api-email-delta.vercel.app/api/email", {
+//   method: "POST",
+//   headers: { "Content-Type": "application/json" },
+//   body: JSON.stringify({
+//     name: data.name,
+//     email: data.email,
+//     prayer: data.prayer
+//   })
+// });
 
     console.log("emailRes status:", emailRes.status);
     const emailText = await emailRes.text();
