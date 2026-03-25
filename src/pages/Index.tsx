@@ -25,9 +25,7 @@ const Index = () => {
   setIsSubmitting(true);
 
   try {
-
-    // Envia o lead para a ActiveCampaign
-    await fetch("https://api-email-delta.vercel.app/api/email", {
+    const emailRes = await fetch("https://api-email-delta.vercel.app/api/email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -37,7 +35,10 @@ const Index = () => {
       })
     });
 
-    // Gera headline e parágrafo
+    console.log("emailRes status:", emailRes.status);
+    const emailText = await emailRes.text();
+    console.log("emailRes body:", emailText);
+
     const gptRes = await fetch("https://api-sellpage.vercel.app/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -48,16 +49,20 @@ const Index = () => {
       })
     });
 
-    const gptData = await gptRes.json();
-    localStorage.setItem("headline", gptData.headline);
-    localStorage.setItem("paragrafo", gptData.paragrafo);
+    console.log("gptRes status:", gptRes.status);
+    const gptText = await gptRes.text();
+    console.log("gptRes body:", gptText);
+
+    const gptData = JSON.parse(gptText);
+
+    localStorage.setItem("headline", gptData.headline || "");
+    localStorage.setItem("paragrafo", gptData.paragrafo || "");
 
     toast({
       title: "✉️ Oración recibida",
       description: "Mantén esta página abierta."
     });
 
-    // Redireciona para /salvando com nome e gênero
     navigate("/salvando", {
       state: {
         nome: data.name,
