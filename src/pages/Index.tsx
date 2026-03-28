@@ -42,7 +42,7 @@ const Index = () => {
         lang: "es",
       };
 
-      const gptRes = await fetch("https://api-sellpage.vercel.app/api/generate", {
+      const gptRes = await fetch("/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
