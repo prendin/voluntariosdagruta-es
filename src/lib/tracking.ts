@@ -1,4 +1,5 @@
 // src/lib/tracking.ts
+
 type Attrs = Record<string, string>;
 
 function addScript(src: string, attrs: Attrs = {}) {
@@ -24,6 +25,9 @@ function addHiddenImg(src: string) {
   document.body.appendChild(img);
 }
 
+//
+// 🔵 META PIXEL
+//
 export function initMetaPixel(pixelId?: string) {
   if (!pixelId) return;
   if ((window as any).fbq) return;
@@ -48,41 +52,26 @@ export function initMetaPixel(pixelId?: string) {
   (window as any).fbq("init", pixelId);
   (window as any).fbq("track", "PageView");
 
-  // fallback simples
   addHiddenImg(`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`);
 }
 
+//
+// 🟡 UTMIFY
+//
 export function initUtmifyPixel(utmifyPixelId?: string) {
   if (!utmifyPixelId) return;
 
   (window as any).pixelId = utmifyPixelId;
-  addScript("https://cdn.utmify.com.br/scripts/pixel/pixel.js", { defer: "" });
+
+  addScript("https://cdn.utmify.com.br/scripts/pixel/pixel.js", {
+    async: "",
+    defer: "",
+  });
 }
 
-export function initActiveCampaign(account?: string) {
-  if (!account) return;
-  if ((window as any).vgo) return;
-
-  (function (e: any, t: Document, o: string, n: string, r?: any, i?: any) {
-    e.visitorGlobalObjectAlias = n;
-    e[n] =
-      e[n] ||
-      function () {
-        (e[n].q = e[n].q || []).push(arguments);
-      };
-    e[n].l = new Date().getTime();
-    r = t.createElement("script");
-    r.src = o;
-    r.async = true;
-    i = t.getElementsByTagName("script")[0];
-    i.parentNode?.insertBefore(r, i);
-  })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-
-  (window as any).vgo("setAccount", account);
-  (window as any).vgo("setTrackByDefault", true);
-  (window as any).vgo("process");
-}
-
+//
+// 🟢 HOTMART (IMPORTANTE PRA VENDAS)
+//
 export function initHotmart(account?: string) {
   if (!account) return;
   if ((window as any).hot) return;
